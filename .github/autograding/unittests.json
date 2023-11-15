@@ -1,0 +1,8 @@
+[
+  {"name": "test_1", "function": "test_1", "timeout": 10, "points": 1},
+  {"name": "test_2", "function": "test_2", "timeout": 10, "points": 2},
+  {"name": "test_3a", "function": "test_3a", "timeout": 10, "points": 2},
+  {"name": "test_3b", "function": "test_3b", "timeout": 10, "points": 2},
+  {"name": "test_4a", "function": "test_4a", "timeout": 10, "points": 2},
+  {"name": "test_4b", "function": "test_4b", "timeout": 10, "points": 1}
+]
