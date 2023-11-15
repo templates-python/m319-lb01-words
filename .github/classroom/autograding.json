@@ -1,24 +1,64 @@
 {
   "tests": [
     {
-      "name": "Input/Output",
-      "setup": "",
-      "run": "python3 main.py",
-      "input": "",
-      "output": "Total: 78.75\n",
-      "comparison": "included",
-      "timeout": 1,
-      "points": 1
-    },
-    {
-      "name": "Pytest",
+      "name": "test_1",
       "setup": "sudo -H pip3 install -r requirements.txt",
-      "run": "pytest -v  -k \"test\"",
+      "run": "pytest -v  -k \"test_1\"",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 2
+      "points": 1
+    },
+    {
+      "name": "test_2",
+      "setup": "sudo -H pip3 install -r requirements.txt",
+      "run": "pytest -v  -k \"test_2\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_3a",
+      "setup": "sudo -H pip3 install -r requirements.txt",
+      "run": "pytest -v  -k \"test_3a\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_3b",
+      "setup": "sudo -H pip3 install -r requirements.txt",
+      "run": "pytest -v  -k \"test_3b\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_4a",
+      "setup": "sudo -H pip3 install -r requirements.txt",
+      "run": "pytest -v  -k \"test_4a\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_4b",
+      "setup": "sudo -H pip3 install -r requirements.txt",
+      "run": "pytest -v  -k \"test_4b\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
     }
   ]
 }

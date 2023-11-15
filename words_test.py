@@ -17,8 +17,8 @@ def test_1(monkeypatch, capsys, detector):
 
 def test_2(monkeypatch, capsys, detector):
     if detector == 1:
-        print(f'test_2 nicht relevant für Schritt {detector}')
-        assert False
+        print('This test will fail with step 1')
+        exit('expected to fail at this time')
     else:
         inputs = iter(['2', 'Badabum', 'Päng'])
         monkeypatch.setattr('builtins.input', lambda _: next(inputs))
@@ -33,8 +33,8 @@ def test_2(monkeypatch, capsys, detector):
 
 def test_3a(monkeypatch, capsys, detector):
     if detector <= 2:
-        print(f'test_3a nicht relevant für Schritt {detector}')
-        assert False
+        print('This test will fail with step 1 and 2')
+        exit('expected to fail at this time')
     else:
         inputs = iter(['2', 'Krach', 'Badabum'])
         monkeypatch.setattr('builtins.input', lambda _: next(inputs))
@@ -48,8 +48,8 @@ def test_3a(monkeypatch, capsys, detector):
 
 def test_3b(monkeypatch, capsys, detector):
     if detector <= 2:
-        print(f'test_3b nicht relevant für Schritt {detector}')
-        assert False
+        print('This test will fail with step 1 and 2')
+        exit('expected to fail at this time')
     else:
         inputs = iter(['4', 'Krach', 'Päng', 'Boom', 'Päng'])
         monkeypatch.setattr('builtins.input', lambda _: next(inputs))
@@ -63,8 +63,8 @@ def test_3b(monkeypatch, capsys, detector):
 
 def test_4a(monkeypatch, capsys, detector):
     if detector <= 3:
-        print(f'test_4a nicht relevant für Schritt {detector}')
-        assert False
+        print('This test will fail with step 1, 2 and 3')
+        exit('expected to fail at this time')
     else:
         inputs = iter(['3', 'Päng', 'Badabum', 'Badabum'])
         monkeypatch.setattr('builtins.input', lambda _: next(inputs))
@@ -74,8 +74,8 @@ def test_4a(monkeypatch, capsys, detector):
 
 def test_4b(monkeypatch, capsys, detector):
     if detector <= 3:
-        print(f'test_4b nicht relevant für Schritt {detector}')
-        assert False
+        print('This test will fail with step 1, 2 and 3')
+        exit('expected to fail at this time')
     else:
         inputs = iter(['5', 'Krach', 'Päng', 'Krach', 'Krach', 'Badabum'])
         monkeypatch.setattr('builtins.input', lambda _: next(inputs))
